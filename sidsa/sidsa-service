@@ -1,0 +1,2 @@
+1.代码提交github分支shuwen->dev
+2.git push origin dev 服务自动部署
