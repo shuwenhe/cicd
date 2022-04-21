@@ -1,0 +1,5 @@
+sidsa-service
+echo "" > /app/sidsa-service/sidsa-service.log
+
+docker日志清理
+docker system prune
