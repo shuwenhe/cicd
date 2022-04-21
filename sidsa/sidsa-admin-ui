@@ -1,0 +1,14 @@
+1.github->shuwen->dev
+2.打包构建 npm run build:prod (本地运行 npm run dev)
+3.代码部署 (sidsa-admin-ui和  sidsa-admin在同一级目录)
+      1.进入sidsa-admin-ui仓库目录 cd sidsa-admin-ui
+      2.打包构建 npm run build:prod
+      3.切换到sidsa-admin目录 make build-linux
+      4.执行部署 make cp-dict
+                make deploy-test Ver=test
+
+
+
+
+
+
