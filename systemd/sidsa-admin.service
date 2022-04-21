@@ -1,0 +1,14 @@
+
+[Unit]
+Description=sidsa-admin
+
+[Service]
+ExecStart=/app/sidsa-admin/sidsa-admin server -c=/app/sidsa-admin/config/settings.dev.yml
+Restart=on-failure
+RestartSec=1min
+StartLimitInterval=36000
+StartLimitBurst=5
+WorkingDirectory=/app/sidsa-admin
+
+[Install]
+WantedBy=multi-user.target
