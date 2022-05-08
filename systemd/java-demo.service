@@ -1,0 +1,14 @@
+
+[Unit]
+Description=java-demo
+
+[Service]
+ExecStart=/app/iot/start300/start300
+WorkingDirectory=/app/iot/start300
+Restart=on-failure
+RestartSec=1min
+StartLimitInterval=36000
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

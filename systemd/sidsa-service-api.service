@@ -1,0 +1,14 @@
+
+[Unit]
+Description=sidsa-service
+
+[Service]
+ExecStart=/app/sidsa-service/sidsa-service api --config=/app/sidsa-service/configs/test.yaml
+WorkingDirectory=/app/sidsa-service
+Restart=on-failure
+RestartSec=1min
+StartLimitInterval=36000
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

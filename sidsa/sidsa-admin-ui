@@ -4,11 +4,15 @@
       1.进入sidsa-admin-ui仓库目录 cd sidsa-admin-ui
       2.打包构建 npm run build:prod
       3.切换到sidsa-admin目录 make build-linux
-      4.执行部署 make cp-dict
-                make deploy-test Ver=test
-
-
-
-
-
-
+4.dict->shuwen
+      1.压缩dict
+            压缩dist文件夹到demo.zip
+            zip -r demo.zip dist/
+      2.dict上传ecs
+            scp dict root@62.234.11.179:/app/shuwen
+      3.解压dict
+            unzip demo.zip
+5.解压dict到目录
+      /app/sidsa-admin/dashboard/dist
+6.Systemd 默认从目录/etc/systemd/system/读取配置文件。
+      sidsa-admin.service
