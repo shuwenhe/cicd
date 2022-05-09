@@ -1,11 +1,12 @@
 1.github->shuwen->dev
 2.npm install
 3.打包构建 npm run build:prod (本地运行 npm run dev)
-4.代码部署 (sidsa-admin-ui和  sidsa-admin在同一级目录)
+4.Actions Re-run all jobs
+5.代码部署 (sidsa-admin-ui和  sidsa-admin在同一级目录)
       1.进入sidsa-admin-ui仓库目录 cd sidsa-admin-ui
       2.打包构建 npm run build:prod
       3.切换到sidsa-admin目录 make build-linux
-5.dict->shuwen
+6.dict->shuwen
       1.压缩dict
             压缩dist文件夹到demo.zip
             zip -r demo.zip dist/
@@ -13,7 +14,7 @@
             scp dict root@62.234.11.179:/app/shuwen
       3.解压dict
             unzip demo.zip
-6.解压dict到目录
+7.解压dict到目录
       /app/sidsa-admin/dashboard/dist
-7.Systemd 默认从目录/etc/systemd/system/读取配置文件。
+8.Systemd 默认从目录/etc/systemd/system/读取配置文件。
       sidsa-admin.service
